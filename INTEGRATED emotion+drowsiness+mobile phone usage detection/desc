@@ -1,1 +1,4 @@
 Run integrated_frontal.py to start
+
+#Close your eyes or look down on your mobile to ring the alarm.
+#When you make an angry face for a certain frames,sms is send using Twilio.
