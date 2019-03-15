@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hacksters</title>
+  
+  <script type="text/javascript" src="js/jquery.min.1.7.js"></script>
+  
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      @import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+
+	color: #fff;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.body{
+	background-position: center;
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background-image: url("images/sound.gif");
+	background-size: cover;
+	-webkit-filter: blur(0px);
+	z-index: 0;
+}
+
+.grad{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+	z-index: 1;
+	opacity: 0.7;
+}
+
+.header{
+	position: absolute;
+	/**top: calc(50% - 35px);
+	left: calc(50% - 255px);**/
+	z-index: 2;
+	top: 20px;
+	left: 30px;
+}
+
+.header div{
+	float: left;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 35px;
+	font-weight: 200;
+	
+}
+
+.header div span{
+	color: #5379fa !important;
+}
+
+.login{
+	position: absolute;
+	top: calc(50% - 75px);
+	left: calc(50% - 105px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+	z-index: 2;
+}
+
+.login input[type=text]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: black;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	background-color: black;
+}
+
+.login input[type=password]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #000;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+	background-color: black;
+}
+
+.login input[value=login]{
+	width: 260px;
+	height: 35px;
+	background: #5379fa;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+}
+
+.login input[value=login]:hover{
+	opacity: 0.8;
+}
+
+.login input[value=login]:active{
+	opacity: 0.6;
+}
+
+.login input[type=text]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+	background-color: #fff;
+}
+
+.login input[type=password]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+	background-color: #fff;
+}
+
+.login input[value=login]:focus{
+	outline: none;
+}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+.abc{
+	top: 10px;
+	left: 10px;
+}
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+    	function validateForm() {
+ 		 var x = document.forms["myForm"]["password"].value;
+ 		//  var y = document.forms["myForm"]["user"].value;
+ 		 if (x == "nss") {
+   		 	return true;
+  		}
+  		if (x=="csi"){
+  			return true;
+  		}
+  else{
+    alert("Wrong Credentials");
+    return false;
+    location.reload();
+  }
+}
+    </script>
+</head>
+
+<body>
+<script type="text/javascript">
+    // jQuery plugin example:
+    $(document).ready(function() {
+        $('#particles').particleground({
+            dotColor: '#fff',
+            lineColor: '#5cbdaa'
+        });
+        $('.intro').css({
+            'margin-top': -($('.intro').height() / 2)
+        });
+    });
+    </script>
+  <div class="body"></div>
+		<div class="grad"></div>
+		<div class="header">
+			<div class="abc">Hackster<span></span></div>
+		</div>
+		<br>
+		<div class="login">
+		<form name="myForm" action="index2.html" onsubmit="return validateForm()">
+		
+				<!-- <input type="text" placeholder="Group-ID" name="user"><br> -->
+				<input type="password" id="password" placeholder="Key" name="password"><br>
+				<input type="submit" value="login">		
+	</form>
+	</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  
+
+</body>
+
+</html>
