@@ -16,7 +16,7 @@ Features:
 8) Reminder for maintenance
 
 Drowsiness detection:
-The system detects Eye Aspect Ratio(EAR) using Haar Cascade classifier along with Adaboost optimizer which is the world's finest optimizer for binary classification, unlike traditional approaches.
+Car accident is the major cause of death in which around 1.3 million people die every year. Majority of these accidents are caused because of distraction or the drowsiness of driver. The system detects Eye Aspect Ratio(EAR) using Haar Cascade classifier along with Adaboost optimizer which is the world's finest optimizer for binary classification, unlike traditional approaches.
 
 Alcohol detection:
 The system uses MQ3 sensor and STM32 microcontroller to detect alcohol vapours in the driver's breath. An external switch is connected to control the motion of the servo motor. Servo motor is used to represent engine system in our prototype. When alcohol amount greater than the legal limit is detected, the car won't start and the driver will receive an LED indication.
